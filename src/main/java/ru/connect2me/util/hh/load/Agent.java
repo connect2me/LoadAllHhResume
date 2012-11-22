@@ -3,7 +3,11 @@ package ru.connect2me.util.hh.load;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import ru.connect2me.util.hh.load.administrative.LocalWriter;
 import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
 import ru.connect2me.util.hh.load.config.Module;
 import ru.connect2me.util.hh.load.config.XMLConfiguration;
@@ -32,7 +36,13 @@ public class Agent extends Module implements HhLoad {
       HtmlPage profilePage = new ProfilePage(props).get(webClient);
       // получение страницы с заготовленными шаблонами автопоиска
       HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
-      // разбор страницы autoSearch
+      
+      try {
+        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
+      } catch (URISyntaxException ex) {
+        Logger.getLogger(Agent.class.getName()).log(Level.SEVERE, null, ex);
+      }
+        // разбор страницы autoSearch
       List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
       // разбор полученных ссылок, получение номеров вакансий
       for (HtmlAnchor search : searchList) {

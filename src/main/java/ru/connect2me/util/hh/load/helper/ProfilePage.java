@@ -47,9 +47,7 @@ public class ProfilePage {
       throw new LoadAllHhResumeException("Не удалось получить доступ к нашей странице работодателя." + ex.getMessage());
     } catch (FailingHttpStatusCodeException ex) {
       throw new LoadAllHhResumeException("Не удалось получить доступ к нашей странице работодателя." + ex.getMessage());
-    } finally{
-      webClient.closeAllWindows();      
-    }
+    } 
     return profilepage;
   }
 }

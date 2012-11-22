@@ -1,3 +1,3 @@
-INFO  2012-11-22 15:13:24,321 [InputElementFactory] - Bad input type: "search", creating a text input
-INFO  2012-11-22 15:13:26,045 [InputElementFactory] - Bad input type: "search", creating a text input
-INFO  2012-11-22 15:13:27,296 [WebClient] - No usage of download: com.gargoylesoftware.htmlunit.WebClient$LoadJob@42d30057
+INFO  2012-11-22 16:34:50,563 [InputElementFactory] - Bad input type: "search", creating a text input
+INFO  2012-11-22 16:34:52,880 [InputElementFactory] - Bad input type: "search", creating a text input
+INFO  2012-11-22 16:34:54,216 [InputElementFactory] - Bad input type: "search", creating a text input
