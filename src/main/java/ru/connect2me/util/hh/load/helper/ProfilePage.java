@@ -38,15 +38,13 @@ public class ProfilePage {
 
       HtmlSubmitInput submit = (HtmlSubmitInput) neededForm.getElementsByAttribute("input", "name", "action").get(0);
       profilepage = (HtmlPage) submit.click();
-      //System.out.println(profilepage.asXml());
-      
     } catch (IOException ex) {
-      webClient.closeAllWindows();
       throw new LoadAllHhResumeException("Не удалось получить доступ к нашей странице работодателя." + ex.getMessage());
     } catch (FailingHttpStatusCodeException ex) {
-      webClient.closeAllWindows();
       throw new LoadAllHhResumeException("Не удалось получить доступ к нашей странице работодателя." + ex.getMessage());
-    } 
+    } finally{
+      webClient.closeAllWindows();      
+    }
     return profilepage;
   }
 }

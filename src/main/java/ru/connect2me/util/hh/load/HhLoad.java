@@ -10,5 +10,5 @@ import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
  * @since 2012.11.18
  */
 public interface HhLoad {
-  public String execute(String html) throws LoadAllHhResumeException;
+  public String execute() throws LoadAllHhResumeException;
 }

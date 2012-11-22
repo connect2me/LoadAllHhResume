@@ -26,8 +26,6 @@ public abstract class Module {
     // Включение логирования
     DOMConfigurator.configure(Module.class.getResource("/log4j.xml"));
     log = Logger.getLogger("ru.connect2me.util.hh");
-    // Включение Saxon парсера
-    System.setProperty("javax.xml.transform.TransformerFactory", "net.sf.saxon.TransformerFactoryImpl");    
   }
   public Properties getProperties() {
     return props;

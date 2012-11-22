@@ -9,6 +9,6 @@ import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
  */
 public class MakeTestLoad {
   public static void main(String[] args) throws LoadAllHhResumeException{
-    new Agent().execute("");
+    new Agent().execute();
   }
 }

@@ -1,0 +1,1 @@
+new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
