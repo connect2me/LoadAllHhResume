@@ -3,6 +3,7 @@ package ru.connect2me.util.hh.load;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.HtmlTableRow;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -10,6 +11,8 @@ import java.net.URL;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import ru.connect2me.util.hh.load.administrative.LocalWriter;
 import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
@@ -41,14 +44,19 @@ public class Agent extends Module implements HhLoad {
       autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
       // запись этой страницы для просмотра
       new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
-      
+      // разбор страницы autoSearch
+      List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
+      for (HtmlAnchor search : searchList) {
+        HtmlPage searchPage = search.click();
+        
+      }
+
     } catch (URISyntaxException ex) {
       throw new LoadAllHhResumeException("hello");
     } catch (IOException ex) {
       throw new LoadAllHhResumeException("hello");
     }
-          // разбор страницы autoSearch
-    List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
+
     webClient.closeAllWindows();
     return "Hello World!";
   }

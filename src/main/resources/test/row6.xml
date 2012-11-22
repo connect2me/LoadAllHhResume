@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" id="js-disabled">
+  <!--request: 2f68b08f4fbd357efcfe8e57f29829cc-->  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>
+      Автопоиск резюме
+    </title>
+    <meta name="description" content="HeadHunter (hh.ru) позволяет найти работу в Москве, регионах и за рубежом. HeadHunter - это качественная база резюме и вакансий и лучшие сервисы для поиска работы и персонала."/>
+    <meta name="keywords" content="работа, вакансии, работа, поиск вакансий, резюме, работы, работу, работ, ищу работу, поиск"/>
+    <meta property="og:image" content="http://i.hh.ru/i/logos/hh_ru.png"/>
+    <meta name="google-site-verification" content="cN6ngoWjOVBZJLyyHK7efAJ7YeqMS3vKAgOFKZXy-D0"/>
+    <link title="Вакансии hh.ru" type="application/opensearchdescription+xml" rel="search" href="http://i.hh.ru/opensearch-v.xml"/>
+    <link title="Резюме hh.ru" type="application/opensearchdescription+xml" rel="search" href="http://i.hh.ru/opensearch-r.xml"/>
+    <link rel="stylesheet" media="all" charset="utf-8" href="http://i.hh.ru/css/ambient/pages/__09c8ba4ec8e97e81209ca12b2ad77628.css"/>
+    <link rel="stylesheet" media="all" charset="utf-8" href="http://i.hh.ru/css/ambient/pages/__838df24ad1cbf7f326a406f3661528fd.css"/>
+    <link rel="stylesheet" media="all" charset="utf-8" href="http://i.hh.ru/css/ambient/pages/__5242353c201d833827e77e2a59efd4d6.css"/>
+    <link rel="stylesheet" href="http://i.hh.ru/css/ambient/pages/__95ae69aa0fba6775742b2ca32967b551.css"/>
+    <link rel="icon" href="http://i.hh.ru/favicons/hh.ru.ico"/>
+    <script>
+//<![CDATA[
+document.documentElement.id = 'js-enabled';
+//]]>
+    </script>
+    <script type="text/javascript" charset="utf-8" src="http://i.hh.ru/js/jsx/jsx.js?build=0.20.2">
+//<![CDATA[
+return {autoinit:false, base:'prototype', lang: 'RU', build:'0.20.2'}
+//]]>
+    </script>
+    <script src="http://i.hh.ru/js/hh/common.js?build=0.20.2" charset="utf-8">
+    </script>
+    <script src="http://i.hh.ru/js/hh/poster.js?build=0.20.2" charset="utf-8">
+    </script>
+    <script src="http://i.hh.ru/js/hh/HHLocator.js?build=0.20.2" charset="utf-8">
+    </script>
+    <script>
+//<![CDATA[
+HH.setConvertionGoal=function(name){
+        try{yaCounter156828.hit(name)}catch(e){};
+        _gaq=window._gaq||[];_gaq.push(['main._trackPageview',name],['reg._trackPageview',name])};
+        HH.trackAnalyticsEvent=function(cat,event,label){_gaq=window._gaq||[];_gaq.push(['main._trackEvent',cat,event,label]);_gaq.push(['reg._trackEvent',cat,event,label])};
+        
+//]]>
+    </script>
+    <script charset="utf-8">
+//<![CDATA[
+
+            jsx.require(['Cookies'], function(){
+                try {
+                    var regions = 113 == 113 ? '' : ' 113';
+                    if (jsx.Cookies.get('regions') == null) {
+                        jsx.Cookies.set('regions', regions, 24 * 365 * 10);
+                    }
+                } catch(e){}
+            });
+        
+//]]>
+    </script>
+  </head>
+  <body class="l-ambient">
+    <img src="http://i.hh.ru//i/hh/footer-small-logo.png" class="printlogo noscreen" alt="HH.ru"/>
+    <div class="g-row m-row_head">
+      <div class="g-col1">
+        <div class="sitesmenu" onclick="
+                return {
+                types:['{jsxComponents}.ToggleBlock'],
+                '{jsxComponents}.ToggleBlock':{
+                closeByClick: true
+                }
+                }
+            ">
+          Работа в 
+          <span class="g-switcher m-switcher_999 sitesmenu-trigger jsxComponents-ToggleBlock-Switcher">
+            России
+          </span>
+          <ul class="g-expandable g-dropdown HeadHunter-SitesMenu-Menu">
+            <li class="g-dropdown-title">
+              Работа в 
+              <span class="g-switcher m-switcher_999 sitesmenu-trigger jsxComponents-ToggleBlock-Switcher">
+                России
+              </span>
+            </li>
+            <noindex>
+              <li class="sitesmenu-region">
+                <a href="http://hh.ru/geo?site=hh.ru&amp;changeRegion=true" title="Россия" rel="nofollow">
+                  Россия
+                </a>
+                <ul class="sitesmenu-city">
+                  <li>
+                    <a href="http://hh.ru/geo/?site=hh.ru&amp;changeRegion=1" title="Москва" rel="nofollow">
+                      Москва
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=spb.hh.ru&amp;changeRegion=true" title="Санкт-Петербург" rel="nofollow">
+                      Санкт-Петербург
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=voronezh.hh.ru&amp;changeRegion=true" title="Воронеж" rel="nofollow">
+                      Воронеж
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=dv.hh.ru&amp;changeRegion=true" title="Дальний Восток" rel="nofollow">
+                      Дальний Восток
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=kazan.hh.ru&amp;changeRegion=true" title="Казань" rel="nofollow">
+                      Казань
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=kaluga.hh.ru&amp;changeRegion=true" title="Калуга" rel="nofollow">
+                      Калуга
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=krasnodar.hh.ru&amp;changeRegion=true" title="Краснодар" rel="nofollow">
+                      Краснодар
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=krasnoyarsk.hh.ru&amp;changeRegion=true" title="Красноярск" rel="nofollow">
+                      Красноярск
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=nn.hh.ru&amp;changeRegion=true" title="Нижний Новгород" rel="nofollow">
+                      Нижний Новгород
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=novosibirsk.hh.ru&amp;changeRegion=true" title="Новосибирск" rel="nofollow">
+                      Новосибирск
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=rostov.hh.ru&amp;changeRegion=true" title="Ростов-на-Дону" rel="nofollow">
+                      Ростов-на-Дону
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=samara.hh.ru&amp;changeRegion=true" title="Самара" rel="nofollow">
+                      Самара
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=saratov.hh.ru&amp;changeRegion=true" title="Саратов" rel="nofollow">
+                      Саратов
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=sochi.hh.ru&amp;changeRegion=true" title="Сочи" rel="nofollow">
+                      Сочи
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=ufa.hh.ru&amp;changeRegion=true" title="Уфа" rel="nofollow">
+                      Уфа
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=ural.hh.ru&amp;changeRegion=true" title="Урал" rel="nofollow">
+                      Урал
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://hh.ru/geo?site=yaroslavl.hh.ru&amp;changeRegion=true" title="Ярославль" rel="nofollow">
+                      Ярославль
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitesmenu-region">
+                <a href="http://hh.ru/geo?site=hh.ua&amp;changeRegion=true" title="Украина" rel="nofollow">
+                  Украина
+                </a>
+              </li>
+              <li class="sitesmenu-region">
+                <a href="http://hh.ru/geo?site=jobs.tut.by&amp;changeRegion=true" title="Беларусь" rel="nofollow">
+                  Беларусь
+                </a>
+              </li>
+              <li class="sitesmenu-region">
+                <a href="http://hh.ru/geo?site=headhunter.com.kz&amp;changeRegion=true" title="Казахстан" rel="nofollow">
+                  Казахстан
+                </a>
+              </li>
+              <li class="sitesmenu-region">
+                <a href="http://hh.ru/geo?site=jobs.day.az&amp;changeRegion=true" title="Азербайджан" rel="nofollow">
+                  Азербайджан
+                </a>
+              </li>
+            </noindex>
+            <li>
+              <iframe frameborder="0">
+              </iframe>
+            </li>
+          </ul>
+        </div>
+        <script type="text/javascript">
+//<![CDATA[
+
+                (function(){
+                    HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                    document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                    var c = document.getElementById('c' + HH.cid).previousSibling;
+                    try { while (c.nodeType != 1 || c.tagName.toLowerCase() == 'script') c = c.previousSibling;
+                    c.id = 'component_' + HH.cid;
+                    HH.comps=HH.comps||[];HH.comps.push(c.id);
+                    }catch(e){};
+                })();
+                
+//]]>
+        </script>
+        <span class="headlogo">
+          <a href="/">
+            <img src="http://i.hh.ru/css/ambient/blocks/head/logo.png" alt="Работа" class="headlogo__img"/>
+          </a>
+        </span>
+      </div>
+      <div class="g-col2 i-headcontent__teaser">
+        <div class="g-hidden teaser banner-wrapper m-teaser_employer">
+          <script type="text/javascript">
+//<![CDATA[
+//<!--
+if (HH) {if (HH.insertBanner) {HH.insertBanner('/banners.mvc?placeId=258&siteId=hh.ru&multy=false&uid=1353564817.149012105352459&contentType=DIRECT_EMPLOYER&areas=1&gender=NO_MATTER&age=NO_MATTER&salary=NO_MATTER', '258'); }; };
+//-->
+//]]>
+          </script>
+        </div>
+      </div>
+      <div class="g-col3 i-headcontent__teaser">
+        <div class="g-hidden teaser banner-wrapper m-teaser_employer">
+          <script type="text/javascript">
+//<![CDATA[
+//<!--
+if (HH) {if (HH.insertBanner) {HH.insertBanner('/banners.mvc?placeId=259&siteId=hh.ru&multy=false&uid=1353564817.149012105352459&contentType=DIRECT_EMPLOYER&areas=1&gender=NO_MATTER&age=NO_MATTER&salary=NO_MATTER', '259'); }; };
+//-->
+//]]>
+          </script>
+        </div>
+      </div>
+      <div class="g-col4">
+      </div>
+    </div>
+    <div class="g-row m-row_menu">
+      <ul class="usermenu g-clearfix ">
+        <li class="item" style="margin: 0;">
+           
+        </li>
+        <li class="item m-item_username HH-ApplicantSettingsFio-TopItem">
+          Юрий  Артамонов
+        </li>
+        <li class="item m-clientid">
+          (клиент 774702)
+        </li>
+        <li class="item">
+          <a href="/price" class="menu__link">
+            Купить услуги
+          </a>
+        </li>
+        <li class="item" onclick="
+                return {
+                    types:['{jsxComponents}.ToggleBlock','{HH}.FirstPageFocusMover'],
+                    '{jsxComponents}.ToggleBlock':{
+                        closeByClick: true,
+                        focusOnOpen: true
+                    }
+                }
+            ">
+          <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+            Cчет
+          </span>
+          <div class="g-expandable g-dropdown">
+            <div class="g-dropdown-title">
+              <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+                Cчет
+              </span>
+            </div>
+            <a href="/employer/account" class="menu__link">
+              Состояние и история
+            </a>
+            <br/>
+            <a href="/employer/payment" class="menu__link">
+              Выписать счет
+            </a>
+            <br/>
+            <a href="/employer/carts" class="menu__link">
+              Отложенные заказы
+            </a>
+            <br/>
+            <a href="/employer/agreements" class="menu__link">
+              Договор
+            </a>
+            <br/>
+            <a href="/employer/job-stats" class="menu__link">
+              Статистика работодателя
+            </a>
+            <br/>
+            <a href="/employer/statistics/summary.do?employerId=774702" class="menu__link">
+              Статистика
+            </a>
+            <br/>
+            <a href="/employer/deeds" class="menu__link">
+              Акты
+            </a>
+            <br/>
+            <iframe frameborder="0">
+            </iframe>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+          </script>
+        </li>
+        <li class="item" onclick="
+                return {
+                    types:['{jsxComponents}.ToggleBlock','{HH}.FirstPageFocusMover'],
+                    '{jsxComponents}.ToggleBlock':{
+                        closeByClick: true,
+                        focusOnOpen: true
+                    }
+                }
+            ">
+          <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+            Компания
+          </span>
+          <span class="new">
+            NEW
+          </span>
+          <div class="g-expandable g-dropdown">
+            <div class="g-dropdown-title">
+              <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+                Компания
+              </span>
+            </div>
+            <a href="/employer/edit" class="menu__link">
+              Описание
+            </a>
+            <span style="top: 0" class="new">
+              NEW
+            </span>
+            <br/>
+            <a href="/employer/addresses" class="menu__link">
+              Адрес офиса
+            </a>
+            <br/>
+            <a href="/employer/managers.do" class="menu__link">
+              Менеджеры вакансий
+            </a>
+            <br/>
+            <iframe frameborder="0">
+            </iframe>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+          </script>
+        </li>
+        <li class="item" onclick="
+                return {
+                    types:['{jsxComponents}.ToggleBlock','{HH}.FirstPageFocusMover'],
+                    '{jsxComponents}.ToggleBlock':{
+                        closeByClick: true,
+                        focusOnOpen: true
+                    }
+                }
+            ">
+          <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+            Настройка
+          </span>
+          <div class="g-expandable g-dropdown">
+            <div class="g-dropdown-title">
+              <span class="g-switcher m-switcher_777 jsxComponents-ToggleBlock-Switcher">
+                Настройка
+              </span>
+            </div>
+            <a href="/employer/settings" class="menu__link">
+              Личные данные
+            </a>
+            <br/>
+            <a href="/employer/settings/search-publication" class="menu__link">
+              Поиск и публикация
+            </a>
+            <br/>
+            <a href="/employer/vacancytemplates" class="menu__link">
+              Шаблоны вакансий
+            </a>
+            <br/>
+            <a href="/employer/settings/email" class="menu__link">
+              Тексты писем
+            </a>
+            <br/>
+            <a href="/employer/settings/subscription" class="menu__link">
+              Рассылки
+            </a>
+            <br/>
+            <iframe frameborder="0">
+            </iframe>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+          </script>
+        </li>
+        <li class="item menu_livetex" onclick="return {types:['{HH}.LiveTex'], '{HH}.LiveTex':{'groupId': 7976, 'onlineClass': 'm-livetex_online'}}">
+          <div class="livetex__text m-livetex__text">
+            <span class="g-switcher m-switcher_green">
+              Техподдержка онлайн
+            </span>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+          </script>
+        </li>
+        <li class="item">
+          <a href="/navigator" class="menu__link">
+            Помощь
+          </a>
+        </li>
+        <li class="item">
+          <a href="/logoff.do" class="menu__link">
+            Выйти
+          </a>
+        </li>
+      </ul>
+      <ul class="menu m-menu_lvl1">
+        <li class="item m-item_search">
+          <form action="/resumesearch/result" method="get">
+            <input type="hidden" name="actionSearch" value="search"/>
+            <input type="hidden" name="areaId" value="113"/>
+            <input type="hidden" name="p.relocationSearch" value="true"/>
+            <input type="hidden" name="p.includeNoSalary" value="true"/>
+            <input type="hidden" name="p.includeNoAge" value="true"/>
+            <input type="search" name="keyword1" placeholder="Поиск резюме" title="Поиск резюме"/>
+             
+                
+            <input type="submit" value="→"/>
+          </form>
+        </li>
+        <li class="item">
+          <a href="/employer/vacancies" class="menu__link">
+            Мои вакансии
+          </a>
+        </li>
+        <li class="item">
+          <a href="/employer/vacancy.do" class="menu__link">
+            Создать вакансию
+          </a>
+        </li>
+        <li class="item">
+          <a href="/resumesearch" class="menu__link">
+            Поиск резюме
+          </a>
+        </li>
+      </ul>
+      <ul class="menu m-menu_lvl2">
+        <li class="item assistant" onclick="
+                return {
+                    types:['{jsxComponents}.ToggleBlock'],
+                    '{jsxComponents}.ToggleBlock':{
+                        closeByClick: true
+                    }
+                }
+            ">
+          <span class="m-menu-call g-button m-button_blue jsxComponents-ToggleBlock-Switcher">
+            Ваш персональный менеджер...
+          </span>
+          <div class="g-expandable g-dropdown">
+            <div class="s-assistant">
+              <div onclick="return {types:['{HH}.Popup']}" class="s-assistant__avatar">
+                <span class="Popup-Switcher">
+                  <img src="/file/9614014.jpg" alt=""/>
+                </span>
+                <div class="g-hidden b-popup b-assistant__popup Popup-Popup">
+                  <img src="/file/9614015.jpg" class="b-assistant__bigphoto" alt=""/>
+                </div>
+              </div>
+              <script type="text/javascript">
+//<![CDATA[
+
+                (function(){
+                    HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                    document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                    var c = document.getElementById('c' + HH.cid).previousSibling;
+                    try { while (c.nodeType != 1 || c.tagName.toLowerCase() == 'script') c = c.previousSibling;
+                    c.id = 'component_' + HH.cid;
+                    HH.comps=HH.comps||[];HH.comps.push(c.id);
+                    }catch(e){};
+                })();
+                
+//]]>
+              </script>
+              <ul>
+                <li class="s-assistant__name">
+                  Дарья Садкова
+                </li>
+                <li>
+                  <span style="white-space: nowrap;">
+                     +7 (495) 974-64-27
+                  </span>
+                  , доб. 1-6127
+                </li>
+                <li>
+                  <a href="mailto:d.sadkova@hh.ru" class="b-assistant-email">
+                    d.sadkova@hh.ru
+                  </a>
+                </li>
+                <li class="b-assistant__icq" style="background: url(http://web.icq.com/whitepages/online?icq=626841790&amp;img=5) left bottom no-repeat;;">
+                  ICQ 626841790
+                </li>
+                <li class="b-callme " onclick="
+                return {
+                  types: ['{HH}.CallMe'],
+                  '{HH}.CallMe':{
+                    today:'Сегодня',
+                    tomorrow:'Завтра'
+                  }
+                }
+              ">
+                  <span class="b-callme-switcher HH-CallMe-Switcher">
+                    <span class="g-switcher b-callme-noCalls-text">
+                      Заказать звонок
+                    </span>
+                    <span class="g-switcher b-callme-hasCalls-text">
+                      Звонок заказан
+                    </span>
+                  </span>
+                  <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+                  </script>
+                </li>
+              </ul>
+            </div>
+            Ваш клиентский номер: 
+            <strong>
+              774702
+            </strong>
+            <div class="assistant_arrow">
+            </div>
+            <iframe frameborder="0">
+            </iframe>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+                    (function(){
+                        HH=window.HH||{};HH.cid=HH.cid?HH.cid+1:1;
+                        document.write('<script id="c' + HH.cid + '"> </scr'+'i'+'pt>');
+                        var c = document.getElementById('c' + HH.cid).parentNode;
+                        try { c.id = 'component_' + HH.cid;
+                        HH.comps=HH.comps||[];HH.comps.push(c.id);
+                        }catch(e){};
+                    })();
+                    
+//]]>
+          </script>
+        </li>
+        <li class="item">
+          <a href="/employer/resumefolders" class="menu__link">
+            Отобранные
+          </a>
+        </li>
+        <li class="item">
+          <a href="/employer/savedSearches.do" class="menu__link">
+            Автопоиск
+            <span class="counter">
+              105865
+            </span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="/employer/resumepicks.mvc" class="menu__link">
+            Выборки
+          </a>
+        </li>
+        <li class="item">
+          <a href="/employer/targetresumes.mvc" class="menu__link">
+            Хотят у нас работать
+          </a>
+        </li>
+        <li class="item">
+          <a href="/employer/tests" class="menu__link">
+            Вопросы и тесты
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="g-row">
+    </div>
+    <div class="g-row m-row_content">
+      <div class="g-paddings">
+        <div class="b-page-errors">
+        </div>
+        <div class="b-mainbanner b-mainbanner-inner">
+          <script>
+//<![CDATA[
+HH.insertBanner('/banners.mvc?placeId=1&siteId=hh.ru&multy=false&uid=1353564817.149012105352459&contentType=DIRECT_EMPLOYER&areas=1&gender=NO_MATTER&age=NO_MATTER&salary=NO_MATTER', 1);
+//]]>
+          </script>
+        </div>
+        <script type="text/javascript">
+//<![CDATA[
+
+  var textAddName = "назначить имя";
+
+  function showNameEditor(id) {
+    switchElementVisibility(id, 'name');
+    switchElementVisibility(id, 'editor');
+    switchElementVisibility(id, 'closeeditor');
+    var editor = $$('.b-savedsearch-editor-' + id)[0];
+    try {
+      editor.focus();
+    }
+    catch (e) {
+    }
+    return false;
+  }
+
+  function switchElementVisibility(id, postfix) {
+    var element = $$('.b-savedsearch-' + postfix + '-' + id)[0];
+    element.toggle();
+  }
+
+  function showElement(id, postfix) {
+    var element = $$('.b-savedsearch-' + postfix + '-' + id)[0];
+    element.show();
+  }
+
+  function hideElement(id, postfix) {
+    var element = $$('.b-savedsearch-' + postfix + '-' + id)[0];
+    element.hide();
+  }
+
+  function changeSavedSearchName(event, savedSearchId) {
+    var key;
+    if (window.event) {
+      key = window.event.keyCode;
+    }
+    else {
+      key = event.which;
+    }
+
+    if (key == 13) {
+      saveSearchName(savedSearchId);
+      return false;
+    }
+  }
+
+  function saveSearchName(id) {
+    var editor = $$('.b-savedsearch-editor-' + id)[0];
+    var nameValue = editor.value;
+
+    var changingBox = $$('.b-savedsearch-changing-' + id)[0];
+    editor.hide();
+    hideElement(id, 'closeeditor');
+    changingBox.show();
+
+    new Ajax.Request("/employer/savedSearches.do", {
+      method: 'get',
+      parameters: {
+        resumeSavedSearchId: id,
+        name: nameValue,
+        changeNameAction: 'changeNameAction'
+      },
+      onSuccess: function() {
+        var label = $$('.b-savedsearch-name-' + id)[0];
+        label.innerHTML = nameValue.length > 0 ? nameValue.escapeHTML() : textAddName;
+      },
+      onFailure: function() {
+      },
+      onComplete: function() {
+        editor.hide();
+        changingBox.hide();
+        showElement(id, 'name');
+      }
+    });
+  }
+
+//]]>
+        </script>
+        <h1>
+          Автопоиск резюме
+        </h1>
+        <table class="l-content-2colums b-employer-resumesavedsearches">
+          <tbody>
+            <tr>
+              <td colspan="2" class="l-content-colum-1">
+                
+
+        На странице «Автопоиск» Вы можете сохранять параметры поисковых запросов, а затем отслеживать резюме, соответствующие Вашему набору требований. Сохранение регулярных запросов позволит Вам не вводить параметры поиска каждый раз. 
+                <a href="/article/14">
+                  Как работает автопоиск?
+                </a>
+                <form name="ResumeSavedSearchesForm" id="form" method="post" action="/employer/savedSearches.do">
+                  <ul class="b-savedsearches-list b-employer-savedsearches">
+                    <li class="b-savedsearch">
+                      <div class="b-savedsearch-date">
+                        
+                    23.08.2012
+                  
+                      </div>
+                      <div class="b-savedsearch-body">
+                        <div class="b-savedsearch-header">
+                          <span class="b-savedsearch-query">
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-added b-savedsearch-name-458239" style="display: inline;" onclick="return showNameEditor(458239);">
+                              
+                              developer
+                            </a>
+                            <input type="text" value="developer" class="b-savedsearch-addname-input b-savedsearch-editor-458239" style="display: none;" size="50" onkeypress="return changeSavedSearchName(event, 458239);"/>
+                            <span class="b-savedsearch-changing-458239" style="display: none">
+                              
+                          запись...
+                        
+                            </span>
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-close b-savedsearch-closeeditor-458239" style="display: none;" onclick="return saveSearchName(458239);">
+                              
+                          OK
+                        
+                            </a>
+                          </span>
+                          <div class="b-savedsearch-actions">
+                            <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=RUR&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22developer%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;showRss=1&amp;basicLogin=1" class="b-savedsearch-rss">
+                              RSS
+                            </a>
+                            <a href="/employer/savedSearches.do?resumeSavedSearchId=458239&amp;deleteAction=delete" class="b-savedsearch-delete" onclick="return confirm('Вы уверены, что хотите удалить этот автопоиск?')">
+                              удалить
+                            </a>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-details">
+                          
+
+                      
+                      
+                        
+                          Россия
+                        
+                      
+                      
+                      
+                        
+                          <p class="b-savedsearch-details-query">
+                             "
+                            <span class="b-savedsearch-details-query-keyword">
+                              developer
+                            </span>
+                            "
+                              
+                                встречается
+                              
+                              
+                                везде
+                            
+                          
+                        
+                          </p>
+                          <div class="b-savedsearch-details-notthatinteresting">
+                            <p>
+                              
+                            включать резюме желающих переехать в этот регион
+                          
+                            </p>
+                            <p class="b-savedsearch-details-include">
+                              <span>
+                                
+                                
+                                  Включать резюме специалистов, не указавших уровень зарплаты
+                                
+                              
+                              </span>
+                            </p>
+                            <p>
+                              
+                          выводить за
+                          
+                          
+                          
+                          
+                            
+                            1 месяц
+                            
+                          
+                          
+                          
+                        
+                            </p>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-employer-results">
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=RUR&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22developer%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D">
+                            263 416
+                            соискателей
+                          </a>
+                          
+                          |
+                          
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=RUR&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=-1&amp;p.fromDateStr=21.11.2012&amp;p.toDateStr=23.11.2012&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22developer%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;p.resumeSavedSearchId=458239&amp;p.lastUsedTimestamp=1353500327000">
+                            <strong>
+                              
+                              30 479
+                              новых соискателей
+                            
+                            </strong>
+                          </a>
+                        </div>
+                        <div class="b-savedsearch-employer-subscription">
+                          
+                    
+                      
+                        Вы подписаны на данный автопоиск,
+                        
+                          <a href="/employer/savedSearches.do?resumeSavedSearchId=458239&amp;subscribeAction=unsubscribe" class="b-savedsearch-employer-subscription-unsubscribe">
+                            <b>
+                              ×
+                            </b>
+                            Отписаться
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="b-savedsearch">
+                      <div class="b-savedsearch-date">
+                        
+                    02.08.2012
+                  
+                      </div>
+                      <div class="b-savedsearch-body">
+                        <div class="b-savedsearch-header">
+                          <span class="b-savedsearch-query">
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-added b-savedsearch-name-443110" style="display: inline;" onclick="return showNameEditor(443110);">
+                              
+                              менеджер по продажам
+                            </a>
+                            <input type="text" value="менеджер по продажам" class="b-savedsearch-addname-input b-savedsearch-editor-443110" style="display: none;" size="50" onkeypress="return changeSavedSearchName(event, 443110);"/>
+                            <span class="b-savedsearch-changing-443110" style="display: none">
+                              
+                          запись...
+                        
+                            </span>
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-close b-savedsearch-closeeditor-443110" style="display: none;" onclick="return saveSearchName(443110);">
+                              
+                          OK
+                        
+                            </a>
+                          </span>
+                          <div class="b-savedsearch-actions">
+                            <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BF%D0%BE+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;showRss=1&amp;basicLogin=1" class="b-savedsearch-rss">
+                              RSS
+                            </a>
+                            <a href="/employer/savedSearches.do?resumeSavedSearchId=443110&amp;deleteAction=delete" class="b-savedsearch-delete" onclick="return confirm('Вы уверены, что хотите удалить этот автопоиск?')">
+                              удалить
+                            </a>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-details">
+                                                 Россия
+                        
+                      
+                      
+                      
+                        
+                          <p class="b-savedsearch-details-query">
+                            
+                          
+                            
+                              
+                                все слова
+                              
+                              "
+                            <span class="b-savedsearch-details-query-keyword">
+                              менеджер по продажам
+                            </span>
+                            "
+                              
+                                встречается
+                              
+                              
+                                везде
+                            
+                          
+                        
+                          </p>
+                          <div class="b-savedsearch-details-notthatinteresting">
+                            <p>
+                              
+                            включать резюме желающих переехать в этот регион
+                          
+                            </p>
+                            <p class="b-savedsearch-details-include">
+                              <span>
+                                
+                                
+                                  Включать резюме специалистов, не указавших уровень зарплаты
+                                
+                              
+                              </span>
+                            </p>
+                            <p>
+                              
+                          выводить за
+                          
+                          
+                          
+                          
+                            
+                            1 месяц
+                            
+                          
+                          
+                          
+                        
+                            </p>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-employer-results">
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BF%D0%BE+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D">
+                            105 321
+                            соискатель
+                          </a>
+                          
+                          |
+                          
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=-1&amp;p.fromDateStr=21.11.2012&amp;p.toDateStr=23.11.2012&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BF%D0%BE+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;p.resumeSavedSearchId=443110&amp;p.lastUsedTimestamp=1353500688000">
+                            <strong>
+                              
+                              10 363
+                              новых соискателя
+                            
+                            </strong>
+                          </a>
+                        </div>
+                        <div class="b-savedsearch-employer-subscription">
+                          
+                    
+                      
+                        Вы подписаны на данный автопоиск,
+                        
+                          <a href="/employer/savedSearches.do?resumeSavedSearchId=443110&amp;subscribeAction=unsubscribe" class="b-savedsearch-employer-subscription-unsubscribe">
+                            <b>
+                              ×
+                            </b>
+                            Отписаться
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="b-savedsearch">
+                      <div class="b-savedsearch-date">
+                        
+                    30.07.2012
+                  
+                      </div>
+                      <div class="b-savedsearch-body">
+                        <div class="b-savedsearch-header">
+                          <span class="b-savedsearch-query">
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-please b-savedsearch-name-439902" style="display: inline;" onclick="return showNameEditor(439902);">
+                              
+                              назначить имя
+                            </a>
+                            <input type="text" value="" class="b-savedsearch-addname-input b-savedsearch-editor-439902" style="display: none;" size="50" onkeypress="return changeSavedSearchName(event, 439902);"/>
+                            <span class="b-savedsearch-changing-439902" style="display: none">
+                              
+                          запись...
+                        
+                            </span>
+                            <a href="javascript:void(0)" class="b-savedsearch-addname-close b-savedsearch-closeeditor-439902" style="display: none;" onclick="return saveSearchName(439902);">
+                              
+                          OK
+                        
+                            </a>
+                          </span>
+                          <div class="b-savedsearch-actions">
+                            <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;showRss=1&amp;basicLogin=1" class="b-savedsearch-rss">
+                              RSS
+                            </a>
+                            <a href="/employer/savedSearches.do?resumeSavedSearchId=439902&amp;deleteAction=delete" class="b-savedsearch-delete" onclick="return confirm('Вы уверены, что хотите удалить этот автопоиск?')">
+                              удалить
+                            </a>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-details">
+                          
+
+                      
+                      
+                        
+                          Россия
+                        
+                      
+                      
+                      
+                        
+                          <p class="b-savedsearch-details-query"/>
+                          <div class="b-savedsearch-details-notthatinteresting">
+                            <p>
+                              
+                            включать резюме желающих переехать в этот регион
+                          
+                            </p>
+                            <p class="b-savedsearch-details-include">
+                              <span>
+                                
+                                
+                                  Включать резюме специалистов, не указавших уровень зарплаты
+                                
+                              
+                              </span>
+                            </p>
+                            <p>
+                              
+                          выводить за
+                          
+                          
+                          
+                          
+                            
+                            1 месяц
+                            
+                          
+                          
+                          
+                        
+                            </p>
+                          </div>
+                        </div>
+                        <div class="b-savedsearch-employer-results">
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D">
+                            726 803
+                            соискателя
+                          </a>
+                          
+                          |
+                          
+                          <a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=USD&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=-1&amp;p.fromDateStr=21.11.2012&amp;p.toDateStr=23.11.2012&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D&amp;p.resumeSavedSearchId=439902&amp;p.lastUsedTimestamp=1353500705000">
+                            <strong>
+                              
+                              65 020
+                              новых соискателей
+                            
+                            </strong>
+                          </a>
+                        </div>
+                        <div class="b-savedsearch-employer-subscription">
+                          
+                    
+                      
+                        Вы подписаны на данный автопоиск,
+                        
+                          <a href="/employer/savedSearches.do?resumeSavedSearchId=439902&amp;subscribeAction=unsubscribe" class="b-savedsearch-employer-subscription-unsubscribe">
+                            <b>
+                              ×
+                            </b>
+                            Отписаться
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="t-savedsearch-employer-pagination">
+                  </div>
+                </form>
+              </td>
+              <td class="l-content-colum-2">
+                <div class="l-content-paddings">
+                  <div class="b-educationalvideos b-eduvideo-employerSavedSearches">
+                    <div onclick="return {types: ['{HH}.EducationalVideo'], '{HH}.EducationalVideo':{tube:'you',movie:'2xxhtgvQAf4'}}" class="b-educationalvideo" id="rndCompId78e278140799b400">
+                      <div class="b-eduvideo-thumb g-ir">
+                        <a class="EducationalVideo-Link" href="/article/731">
+                          Обучающий ролик «Автопоиск резюме»
+                          <span class="g-shy">
+                            ­
+                          </span>
+                        </a>
+                      </div>
+                      <div class="b-eduvideo-link">
+                        <a class="g-switcher EducationalVideo-Link" href="/article/731">
+                          Обучающий ролик «Автопоиск резюме»
+                        </a>
+                      </div>
+                    </div>
+                    <script type="text/javascript">
+//<![CDATA[
+jsx.require(['Components'], function(){jsx.Components.createComponents([document.getElementById('rndCompId78e278140799b400')])});
+//]]>
+                    </script>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="g-row m-row_foot">
+      <div class="g-col1">
+        <div class="copyright">
+          © Группа компаний «HeadHunter», 2000 — 2012
+        </div>
+        <div class="lang">
+          <a href="/locale.do?language=EN">
+            In English
+          </a>
+        </div>
+        <script>
+//<![CDATA[
+
+            (function(){
+                if (!HH || !HH.comps || !jsx) return;
+                jsx.require(['Components'], function(){
+                    HH.compInitStart = (+new Date());
+                    var id;
+                    while (id = HH.comps.shift()) jsx.Components.createComponents([document.getElementById(id)], true);
+                });
+            })();
+            if (window.addEventListener) {
+                window.addEventListener('load', function(){
+                    try {
+                        var timing = window.performance.timing,
+                            times = {
+                                firstByte : timing.responseStart,
+                                LastByte : timing.responseEnd,
+                                startDomParse : timing.domLoading,
+                                finishDomParse : timing.domInteractive,
+                                deferredDone : timing.domContentLoadedEventStart,
+                                domContentLoaded : timing.domContentLoadedEventEnd,
+                                onLoad : timing.domComplete,
+                                compInitStart: HH.compInitStart,
+                                compInitEnd: HH.compInitEnd
+                            };
+                        (new Image()).src = '/stat?p=' + encodeURI(location.pathname) +
+                        ',' + Object.keys(times).map(function(i){
+                                if (!times[i]) return '';
+                                return i+':'+(times[i]-=timing.fetchStart)
+                            }).filter(function(i){return i}).join(',');
+                    } catch(e){}
+                }, false)
+            }
+        
+//]]>
+        </script>
+        <script>
+//<![CDATA[
+
+                var liveTexID = 15998,
+                    liveTexHHGroups = [7975, 7976];
+            
+            var liveTex = true,
+            liveTex_object = true,
+            hh_liveTex_callback = function(){
+            jsx.require(['CallBacks'], function(){
+            jsx.CallBacks.need(['{HH}.LiveTex'], function(){
+            jsx.CallBacks.dispatch('HH-LiveTex-Loaded');
+            }, HH);
+            });
+            };
+            (function(groups) {
+            var lt = document.createElement('script');
+            lt.type ='text/javascript';
+            lt.async = true;
+            lt.src = 'http://cs15.livetex.ru/js/client_hh_stable.js';
+            var sc = document.getElementsByTagName('script')[0];
+            if ( sc ) sc.parentNode.insertBefore(lt, sc);
+            else document.documentElement.firstChild.appendChild(lt);
+            window.liveTexHHGroups = groups;
+            })(liveTexHHGroups);
+        
+//]]>
+        </script>
+        <br/>
+        <script>
+//<![CDATA[
+document.write("<a href='http://www.liveinternet.ru/click;HH_Center' target=_blank><img src='//counter.yadro.ru/hit;HH_Center?t14.1;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"' title='LiveInternet: показано число просмотров и посетителей за 24 часа' border='0' width='0' height='0' style='position:absolute'></a>")
+//]]>
+        </script>
+        <script>
+//<![CDATA[
+var _gaq=_gaq||[];var pluginUrl='//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['reg._setAccount','UA-11659974-24'],['reg._setDomainName', 'hh.ru'],['reg._addOrganic','rambler.ru','words'],['reg._addOrganic','nova.rambler.ru','query'],['reg._addOrganic','mail.ru','q'],['reg._addOrganic','nigma.ru','s'],['reg._addOrganic','search.livetool.ru','text',true],['reg._addOrganic','search.qip.ru','query'],['reg._trackPageview'],['main._require','inpage_linkid',pluginUrl],['main._setAccount','UA-11659974-2'],['main._setDomainName', 'hh.ru'],['main._require', 'inpage_linkid', pluginUrl],['main._addOrganic','rambler.ru','words'],['main._addOrganic','nova.rambler.ru','query'],['main._addOrganic','mail.ru','q'],['main._addOrganic','nigma.ru','s'],['main._addOrganic','search.livetool.ru','text',true],['main._addOrganic','search.qip.ru','query'],['main._trackPageview']);
+(function(){var ga=document.createElement('script');ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+//]]>
+        </script>
+        <script src="http://sedu.adhands.ru/js/counter.js" async="async" onload="(function() {var r=new adhandsReport('http://sedu.adhands.ru/site/');r.id('675');r.send()})()">
+        </script>
+        <noscript>
+          <img width="1" height="1" src="http://sedu.adhands.ru/site/?static=on&amp;clid=675&amp;rnd=1234567890123" style="display:none;"/>
+        </noscript>
+        <script>
+//<![CDATA[
+(function(){var d=document, s=screen, a=';r='+escape(d.referrer)+';j='+navigator.javaEnabled()+';s='+s.width+'*'+s.height+';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);d.write('<a href="http://top.mail.ru/jump?from=310372" target="_top"><img src="http://dc.cb.b4.a0.top.mail.ru/counter?id=310372;t=49;js=13'+a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" height="31" width="88"></a>')})()
+//]]>
+        </script>
+        <noscript>
+          <a target="_top" href="http://top.mail.ru/jump?from=310372">
+            <img src="http://dc.cb.b4.a0.top.mail.ru/counter?js=na;id=310372;t=49" height="31" width="88" border="0" alt="Рейтинг@Mail.ru"/>
+          </a>
+        </noscript>
+        <script id="top100Counter" src="http://counter.rambler.ru/top100.jcn?644963">
+        </script>
+        <noscript>
+          <img src="http://counter.rambler.ru/top100.cnt?644963" width="1" height="1" border="0"/>
+        </noscript>
+        <a href="http://top100.rambler.ru/navi/644963/">
+          <img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100" width="88" height="31" border="0"/>
+        </a>
+        <script>
+//<![CDATA[
+(function(){var i=new Image();i.src='http://www.tns-counter.ru/V13a***R>'+document.referrer.replace(/\*/g,'%2a')+'*hh_ru/ru/UTF-8/tmsec=hh_total/'+Math.round(Math.random()*1000000000);})()
+//]]>
+        </script>
+        <noscript>
+          <img src="http://www.tns-counter.ru/V13a****hh_ru/ru/UTF-8/tmsec=hh_total/" width="1" height="1" style="position:absolute"/>
+        </noscript>
+        <script>
+//<![CDATA[
+new Image().src = "//counter.yadro.ru/hit;HeadHunter?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,80))+";"+Math.random();
+//]]>
+        </script>
+        <a href="http://metrika.yandex.ru/stat/?id=156828&amp;from=informer" target="_blank" rel="nofollow">
+          <img src="//bs.yandex.ru/informer/156828/3_0_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"/>
+        </a>
+        <div style="display:none;">
+          <script>
+//<![CDATA[
+(function(w,c){(w[c]=w[c]||[]).push(function(){try{w.yaCounter156828=new Ya.Metrika({id:156828,enableAll:true,params:window.yaParams||{}});}catch(e){}});})(window, "yandex_metrika_callbacks");
+//]]>
+          </script>
+        </div>
+        <script src="//mc.yandex.ru/metrika/watch_visor.js" type="text/javascript" defer="defer">
+        </script>
+        <noscript>
+          <div>
+            <img src="//mc.yandex.ru/watch/156828" style="position:absolute; left:-9999px;"/>
+          </div>
+        </noscript>
+        <a href="http://www.liveinternet.ru/click;HeadHunter" target="_blank">
+          <img src="//counter.yadro.ru/logo;HeadHunter?14.1" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" border="0" width="88" height="31"/>
+        </a>
+        
+         
+    
+      </div>
+      <!--noindex-->      <ul class="g-col2">
+        <li class="footlink">
+          <a href="/article/28">
+            О HeadHunter
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="http://corp.mail.ru/">
+            О Mail.ru Group
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/employer/1455">
+            Наши вакансии
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/feedback.mvc">
+            Пишите нам
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/poll">
+            Оцените нас
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/399">
+            Партнёры
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/30">
+            Исследования
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/176">
+            Требования к ПО
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/safety" class="footlink__positive">
+            Безопасный HeadHunter
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/8" class="footlink__negative">
+            Реклама на сайте
+          </a>
+        </li>
+      </ul>
+      <ul class="g-col3">
+        <li class="footlink">
+          <a href="/article/2067">
+            Работодателям
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/employer/vacancy-promo/">
+            Публикация вакансий
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/demo">
+            Прайс-лист
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/112">
+            Производственный календарь
+          </a>
+        </li>
+      </ul>
+      <ul class="g-col4">
+        <li class="footlink">
+          <a href="/article/2">
+            Соискателям
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/applicant/package.mvc">
+            Продвижение резюме
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/1150">
+            Работа в других городах
+          </a>
+        </li>
+        <li class="footlink">
+          <a href="/article/1365">
+            Защита персональных данных
+          </a>
+        </li>
+        <li class="footlink m-footlink_rss">
+          <a href="/rss">
+            RSS
+          </a>
+        </li>
+      </ul>
+      <!--/noindex-->    </div>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+//<![CDATA[
+var HH=HH||{};HH.getBanners()
+//]]>
+    </script>
+  </body>
+</html>

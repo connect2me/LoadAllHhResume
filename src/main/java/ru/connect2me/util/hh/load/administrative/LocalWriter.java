@@ -16,7 +16,6 @@ import org.apache.commons.io.FileUtils;
 public class LocalWriter {
   public void write(String path, String data) throws IOException, URISyntaxException {
     URL url = Thread.currentThread().getContextClassLoader().getResource(path);
-    FileUtils.touch(new File(url.toURI().getPath()));
     File file = new File(url.toURI().getPath());
     FileUtils.writeStringToFile(file, data, "UTF-8");
   }
