@@ -9,6 +9,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
 
 /**
@@ -19,22 +20,26 @@ import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
  * @since 2012.11.18
  */
 public class ProfilePage {
+  private Properties props;
+  public ProfilePage(Properties props){
+    this.props = props;
+  }
   public HtmlPage get(WebClient webClient) throws LoadAllHhResumeException {
     HtmlPage profilepage = null;
     try {
       webClient.setJavaScriptEnabled(false);
       webClient.setCssEnabled(false);
 
-      HtmlPage page = webClient.getPage("http://hh.ru/logon.do");
+      HtmlPage page = webClient.getPage(props.getProperty("page"));
 
       List<HtmlForm> formList = page.getForms();
 
       HtmlForm neededForm = formList.get(1);
 
       HtmlTextInput user = neededForm.getInputByName("username");
-      user.setValueAttribute("a8019111@yandex.ru");
+      user.setValueAttribute(props.getProperty("user"));
       HtmlPasswordInput pass = neededForm.getInputByName("password");
-      pass.setValueAttribute("YDz5iM");
+      pass.setValueAttribute(props.getProperty("pwd"));
 
       HtmlSubmitInput submit = (HtmlSubmitInput) neededForm.getElementsByAttribute("input", "name", "action").get(0);
       profilepage = (HtmlPage) submit.click();
