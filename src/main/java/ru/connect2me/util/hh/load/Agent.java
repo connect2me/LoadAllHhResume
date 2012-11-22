@@ -37,11 +37,11 @@ public class Agent extends Module implements HhLoad {
       // получение страницы с заготовленными шаблонами автопоиска
       HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
       
-      try {
-        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
-      } catch (URISyntaxException ex) {
-        Logger.getLogger(Agent.class.getName()).log(Level.SEVERE, null, ex);
-      }
+//      try {
+//        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
+//      } catch (URISyntaxException ex) {
+//        Logger.getLogger(Agent.class.getName()).log(Level.SEVERE, null, ex);
+//      }
         // разбор страницы autoSearch
       List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
       // разбор полученных ссылок, получение номеров вакансий
