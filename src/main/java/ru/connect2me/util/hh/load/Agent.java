@@ -8,7 +8,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -18,6 +21,7 @@ import ru.connect2me.util.hh.load.administrative.LocalWriter;
 import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
 import ru.connect2me.util.hh.load.config.Module;
 import ru.connect2me.util.hh.load.config.XMLConfiguration;
+import ru.connect2me.util.hh.load.helper.HandlerSearchPage;
 import ru.connect2me.util.hh.load.helper.ProfilePage;
 
 /**
@@ -46,11 +50,16 @@ public class Agent extends Module implements HhLoad {
       new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
       // разбор страницы autoSearch
       List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
+      // разбор полученных ссылок
+      Set<String> set = new HashSet<String>();
       for (HtmlAnchor search : searchList) {
         HtmlPage searchPage = search.click();
-        
+        set.addAll(new HandlerSearchPage().get(searchPage));
       }
-
+      Iterator it = set.iterator();
+      while (it.hasNext()) {
+        System.out.println(it.next());
+      }
     } catch (URISyntaxException ex) {
       throw new LoadAllHhResumeException("hello");
     } catch (IOException ex) {
