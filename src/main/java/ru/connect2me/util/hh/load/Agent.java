@@ -37,6 +37,7 @@ public class Agent extends Module implements HhLoad {
       // получение страницы с заготовленными шаблонами автопоиска
       HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
       
+      
 //      try {
 //        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
 //      } catch (URISyntaxException ex) {

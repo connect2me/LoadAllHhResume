@@ -25,6 +25,7 @@ public class ProfilePage {
     this.props = props;
   }
   public HtmlPage get(WebClient webClient) throws LoadAllHhResumeException {
+    webClient.closeAllWindows();
     HtmlPage profilepage = null;
     try {
       webClient.setJavaScriptEnabled(false);
