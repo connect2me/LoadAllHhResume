@@ -23,7 +23,7 @@ public class MakeTestLoad {
     props.put("user", "a8019111@yandex.ru");
     props.put("pwd", "YDz5iM");
 
-    Set<String> set = new Agent(props).execute();
+    Set<String> set = new Agent(webClient, props).execute();
     Iterator<String> iterator = set.iterator();
     
     HtmlPage page = new ProfilePage(props).get(webClient);

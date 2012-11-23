@@ -1,13 +1,10 @@
 package ru.connect2me.util.hh.load;
 
+import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import ru.connect2me.util.hh.load.administrative.LocalWriter;
 import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
 import ru.connect2me.util.hh.load.config.Module;
 import ru.connect2me.util.hh.load.config.XMLConfiguration;
@@ -23,10 +20,12 @@ import ru.connect2me.util.hh.load.helper.ProfilePage;
  */
 public class Agent extends Module implements HhLoad {
   private Properties props;
+  private WebClient webClient;
 
-  public Agent(Properties props) throws LoadAllHhResumeException {
+  public Agent(WebClient webClient, Properties props) throws LoadAllHhResumeException {
     super(new XMLConfiguration(Agent.class.getResourceAsStream("/config-LoadAllHhResume.xml")));
     this.props = props;
+    this.webClient = webClient;
   }
 
   public Set<String> execute() throws LoadAllHhResumeException {
@@ -36,8 +35,6 @@ public class Agent extends Module implements HhLoad {
       HtmlPage profilePage = new ProfilePage(props).get(webClient);
       // получение страницы с заготовленными шаблонами автопоиска
       HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
-      
-      
 //      try {
 //        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
 //      } catch (URISyntaxException ex) {
@@ -51,10 +48,9 @@ public class Agent extends Module implements HhLoad {
         set.addAll(new HandlerSearchPage().get(searchPage));
       }
     } catch (IOException ex) {
-      throw new LoadAllHhResumeException("Agent is down.");
-    } finally {
       webClient.closeAllWindows();
-    }
+      throw new LoadAllHhResumeException("Agent is down.");
+    } 
     return set;
   }
 }

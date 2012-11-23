@@ -1,6 +1,5 @@
 package ru.connect2me.util.hh.load.config;
 
-import com.gargoylesoftware.htmlunit.WebClient;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -16,7 +15,6 @@ public abstract class Module {
   protected static ClassLoader classLoader;
   protected static Logger log;
   protected static Properties props;// свойства из config.xml, props короче чем getProperties()
-  protected static WebClient webClient = new WebClient();
   public Module(Configuration config) {
     init(config);
   }
