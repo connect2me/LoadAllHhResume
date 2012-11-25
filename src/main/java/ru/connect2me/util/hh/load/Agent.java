@@ -1,15 +1,11 @@
 package ru.connect2me.util.hh.load;
 
 import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.*;
 import java.io.IOException;
 import java.util.*;
-import ru.connect2me.util.hh.load.config.LoadAllHhResumeException;
-import ru.connect2me.util.hh.load.config.Module;
-import ru.connect2me.util.hh.load.config.XMLConfiguration;
-import ru.connect2me.util.hh.load.helper.HandlerSearchPage;
-import ru.connect2me.util.hh.load.helper.ProfilePage;
+import ru.connect2me.util.hh.load.config.*;
+import ru.connect2me.util.hh.load.helper.*;
 
 /**
  * Входная точка сервиса
@@ -35,12 +31,7 @@ public class Agent extends Module implements HhLoad {
       HtmlPage profilePage = new ProfilePage(props).get(webClient);
       // получение страницы с заготовленными шаблонами автопоиска
       HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
-//      try {
-//        new LocalWriter().write("test/autoSearch.xhtml", autoSearch.asXml());
-//      } catch (URISyntaxException ex) {
-//        Logger.getLogger(Agent.class.getName()).log(Level.SEVERE, null, ex);
-//      }
-        // разбор страницы autoSearch
+      // разбор страницы autoSearch
       List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
       // разбор полученных ссылок, получение номеров вакансий
       for (HtmlAnchor search : searchList) {
@@ -49,7 +40,7 @@ public class Agent extends Module implements HhLoad {
       }
     } catch (IOException ex) {
       webClient.closeAllWindows();
-      throw new LoadAllHhResumeException("Agent is down.");
+      throw new LoadAllHhResumeException("Agent is down. " + ex.getMessage());
     } 
     return set;
   }
