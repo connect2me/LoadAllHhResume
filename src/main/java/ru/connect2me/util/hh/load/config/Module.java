@@ -16,9 +16,6 @@ public abstract class Module {
   protected static final Logger logger = LoggerFactory.getLogger(Module.class);
   protected static Properties props;// свойства из config.xml, props короче чем getProperties()
   public Module(Configuration config) {
-    init(config);
-  }
-  private void init(Configuration config) {
     classLoader = Thread.currentThread().getContextClassLoader();
     props = config.getProperties();
   }

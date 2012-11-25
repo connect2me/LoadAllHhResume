@@ -3,7 +3,10 @@ package ru.connect2me.util.hh.load;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.*;
 import java.io.IOException;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
 import ru.connect2me.util.hh.load.config.*;
 import ru.connect2me.util.hh.load.helper.*;
 
@@ -14,12 +17,12 @@ import ru.connect2me.util.hh.load.helper.*;
  * @version 1.0
  * @since 2012.11.18
  */
-public class Agent extends Module implements HhLoad {
+public class HhAgent extends Module implements HhLoad {
   private Properties props;
   private WebClient webClient;
 
-  public Agent(WebClient webClient, Properties props) throws LoadAllHhResumeException {
-    super(new XMLConfiguration(Agent.class.getResourceAsStream("/config-LoadAllHhResume.xml")));
+  public HhAgent(WebClient webClient, Properties props) throws LoadAllHhResumeException {
+    super(new XMLConfiguration(HhAgent.class.getResourceAsStream("/config-LoadAllHhResume.xml")));
     this.props = props;
     this.webClient = webClient;
   }
