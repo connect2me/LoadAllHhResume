@@ -3,10 +3,13 @@ package ru.connect2me.util.hh.load;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.*;
 import java.io.IOException;
+import java.net.URL;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import ru.connect2me.util.hh.load.config.*;
 import ru.connect2me.util.hh.load.helper.*;
 
@@ -32,13 +35,29 @@ public class HhAgent extends Module implements HhLoad {
     try {
       // получение страницы профиля нашего работодателя
       HtmlPage profilePage = new ProfilePage(props).get(webClient);
+      String profilePageEncoding = profilePage.getPageEncoding();
+      
+      boolean isFind = profilePage.asXml().contains("клиент 774702");
+      
       // получение страницы с заготовленными шаблонами автопоиска
-      HtmlPage autoSearch = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
+      HtmlPage autoSearchPage = profilePage.getAnchorByHref("/employer/savedSearches.do").click();
+      String autoSearchEncoding = profilePage.getPageEncoding();
+      URL autoSearchURL = autoSearchPage.getUrl();
+      String str = autoSearchURL.getPath();
+
+      HtmlPage savedSearches = webClient.getPage("http://hh.ru/employer/savedSearches.do");
+
       // разбор страницы autoSearch
-      List<HtmlAnchor> searchList = (List<HtmlAnchor>) autoSearch.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
+      List<HtmlAnchor> searchList = (List<HtmlAnchor>) savedSearches.getByXPath("//div[@class='b-savedsearch-employer-results']/a[1]");
       // разбор полученных ссылок, получение номеров вакансий
-      for (HtmlAnchor search : searchList) {
-        HtmlPage searchPage = search.click();
+      for (HtmlAnchor anchor : searchList) {
+        // HtmlAnchor[<a href="/resumesearch/result?actionSearch=actionSearch&amp;areaId=113&amp;p.salaryFrom=0&amp;p.salaryTo=0&amp;p.currencyCode=RUR&amp;p.gender=-1&amp;p.includeNoGender=true&amp;p.ageFrom=0&amp;p.ageTo=0&amp;p.includeNoAge=true&amp;p.educationId=0&amp;p.searchPeriod=30&amp;p.orderByMode=2&amp;p.relocationSearch=true&amp;p.includeNoSalary=true&amp;p.itemsOnPage=20&amp;p.keyword1=%5B%7B%22w%22%3A%22developer%22%2C%22l%22%3A%22normal%22%2C%22p%22%3A%5B%22full_text%22%5D%7D%5D%3D%3D%3D%21%3D%3D%3D">]
+        String anchorStr = anchor.toString();
+        Matcher m = Pattern.compile("(/resumesearch/.+)(?=\">\\])").matcher(anchorStr);
+        String link = null;
+        if (m.find()) link = m.group(); 
+        else throw new LoadAllHhResumeException("Не смогли получить ссылку на страницу с набором резюме из сохранного запроса.");
+        HtmlPage searchPage = webClient.getPage(link); // anchor.click();
         set.addAll(new HandlerSearchPage().get(searchPage));
       }
     } catch (IOException ex) {
