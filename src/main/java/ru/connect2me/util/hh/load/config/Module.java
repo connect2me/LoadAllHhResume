@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
  */
 public abstract class Module {
   protected static ClassLoader classLoader;
-  protected static final Logger logger = LoggerFactory.getLogger(Module.class);
   protected static Properties props;// свойства из config.xml, props короче чем getProperties()
   public Module(Configuration config) {
     classLoader = Thread.currentThread().getContextClassLoader();

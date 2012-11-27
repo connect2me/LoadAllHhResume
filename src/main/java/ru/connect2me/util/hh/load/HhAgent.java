@@ -5,16 +5,19 @@ import com.gargoylesoftware.htmlunit.html.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.connect2me.util.hh.load.config.*;
 import ru.connect2me.util.hh.load.helper.*;
 
 /**
- * Входная точка сервиса
+ * Входная точка сервиса.
  *
  * @author Зайнуллин Радик
  * @version 1.0
@@ -29,8 +32,9 @@ public class HhAgent extends Module implements HhLoad {
     this.props = props;
     this.webClient = webClient;
   }
-
+  // Выдает набор id резюме вытащенных из сохраненных запросов
   public Set<String> execute() throws LoadAllHhResumeException {
+    Logger logger = LoggerFactory.getLogger(HhAgent.class);
     Set<String> set = new HashSet<String>();
     try {
       // получение страницы профиля нашего работодателя
@@ -57,13 +61,19 @@ public class HhAgent extends Module implements HhLoad {
         String link = null;
         if (m.find()) link = m.group(); 
         else throw new LoadAllHhResumeException("Не смогли получить ссылку на страницу с набором резюме из сохранного запроса.");
-        HtmlPage searchPage = webClient.getPage(link); // anchor.click();
+        HtmlPage searchPage = webClient.getPage("http://hh.ru" + link); // anchor.click();
         set.addAll(new HandlerSearchPage().get(searchPage));
       }
     } catch (IOException ex) {
       webClient.closeAllWindows();
+      logger.error("Произошла ошибка - Agent is down. " + ex.getMessage());
       throw new LoadAllHhResumeException("Agent is down. " + ex.getMessage());
     } 
+    logger.info("Набрали " + set.size() + " ссылок на новые резюме.");
+    Iterator<String> iterator = set.iterator();
+    while(iterator.hasNext()){
+      logger.info(iterator.next());
+    }
     return set;
   }
 }
